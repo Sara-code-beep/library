@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<a href="another_page.html"></a>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="device-width, initial-scale=1.0" />
+    
+    <TITLE>First page</TITLE>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="css/main.js"></script>
+</head>
+<body>
+
+  <h2 class="title">Popup Form</h2>
+<p class="txt">Click on the button at the bottom of this page to open the login form.</p>
+
+  <button class="open-button" onclick="openForm()">Open Form</button>
+
+  <!-- The form -->
+  <div class="form-popup" id="myForm">
+    <form  class="form-container">
+      <h1>Login</h1>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      
+      
+    <input type="password" placeholder="Enter Password" name="psw" required>
+ 
+      <a  href="index.html" type="submit" class="bt" >login</a>
+
+      <button type="button" class="btn " onclick="closeForm()">Close</button>
+    </form>
+  </div>
+      
+</body>
+</html>
